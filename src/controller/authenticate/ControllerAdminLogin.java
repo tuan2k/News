@@ -35,6 +35,17 @@ public class ControllerAdminLogin extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		/**
+		 * type /login -> this method call and run sequence
+		 * if (condition) => request URL (dashboard)
+		 * else return error message
+		 */
+		if(request.getParameter("submit")!=null){
+			String email = request.getParameter("email");
+			String password = request.getParameter("password");
+			System.out.println("email "+email);
+			System.out.println("password: "+password);
+		}
 		RequestDispatcher rd = request.getRequestDispatcher("/front/login.jsp");
 		rd.forward(request, response);
 	}

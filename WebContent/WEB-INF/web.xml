@@ -17,14 +17,22 @@
     <servlet-name>ControllerFrontIndex</servlet-name>
     <url-pattern>/trang-chu</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>ControllerAdminLogin</servlet-name>
     <servlet-class>controller.authenticate.ControllerAdminLogin</servlet-class>
   </servlet>
+  <!-- PUSH/FILL DATA UI -->
   <servlet-mapping>
     <servlet-name>ControllerAdminLogin</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+  <!-- GET DATA FROM POST METHOD -->
+  <servlet-mapping>
+    <servlet-name>ControllerAdminLogin</servlet-name>
+    <url-pattern>/admin-login</url-pattern>
+  </servlet-mapping>
+
   
    <servlet>
     <servlet-name>ControllerAdminDashboard</servlet-name>

@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="<%=request.getContextPath()%>/public/css/style.css">
     </head>
     <body>
-          <form class="Box" action="index.html" method="POST">
+          <form class="Box" action="<%=request.getContextPath()%>/admin-login" method="POST">
               <h1>Login</h1>
-              <input type="text" placeholder="Username">
-              <input type="password" placeholder="Password">
-              <input type="submit" value="Login" >
+              <input id="" name="day" type="text" placeholder="Email">
+              <input id="" name="password" type="password" placeholder="Password">
+              <input type="submit" name="submit" value="Login" >
           </form>
     </body>
 </html> 
